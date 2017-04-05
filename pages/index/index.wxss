@@ -49,4 +49,10 @@
   display: block;
   height: 100%;
   width: 100%;
-  overflow: hidden;}
+  overflow: hidden;
+}
+
+.to-do-item{
+  font-family: Helvetica, Arial, "Hiragino Sans GB", "Source Han Sans CN", "PingFang SC", Roboto, "微软雅黑", "Heiti SC", "Microsoft Yahei", sans-serif;
+  font-size: 28rpx;
+}

@@ -5,7 +5,11 @@ Page({
   data: {
     motto: 'Hello World',
     userInfo: {}
+
+    ,toDoList: [{text: '跑步'}, {text: '记单词'}]
   },
+
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
@@ -22,5 +26,20 @@ Page({
         userInfo:userInfo
       })
     })
-  }
+  },
+      /**
+     * 点击tab切换
+     */
+    swichNav: function (e) {
+
+        var that = this;
+
+        if (this.data.currentTab === e.target.dataset.current) {
+            return false;
+        } else {
+            that.setData({
+                currentTab: e.target.dataset.current
+            })
+        }
+    },
 })
